@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rubbed Songs</title>
+    <link rel="stylesheet" href="CSS/reset-min.css" />
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <style>
+      @charset 'utf-8';
+
+      .bg {
+        background-image: url(./img/album2-opa.png);
+        background-repeat: no-repeat;
+        background-size: 500px 500px;
+      }
+      .album-text {
+        display: flex;
+        justify-content: center;
+        /* vertical-align: center; */
+        text-align: center;
+        align-self: center;
+        overflow: none;
+        font-family: "Hina Mincho", serif;
+        font-size: 20px;
+        font-weight: bold;
+        color: #334c71;
+        width: 500px;
+        height: 500px;
+        margin: 30px 0 0 -15px;
+      }
+
+      ol {
+        list-style: none;
+        counter-reset: my-awesome-counter;
+      }
+
+      ol li {
+        counter-increment: my-awesome-counter;
+      }
+
+      ol li::before {
+        content: counter(my-awesome-counter) ". ";
+      }
+    </style>
+  </head>
+  <body class="bg">
+    <div class="album-text">
+      <ol class="songs">
+        <li>Having a good time</li>
+        <li>もぐりこみたい</li>
+        <li>GROOVE STAR</li>
+        <li>引越しの歌</li>
+        <li>すきになったら</li>
+        <li>I Love You</li>
+        <li>Break time Rag</li>
+        <li>月夜のサンビスタ</li>
+        <li>ほくろのかみさま</li>
+        <li>灯火たち</li>
+        <li>オルゴール</li>
+        <li>歩きだせよ</li>
+        <li>レーズンとパン （Bonus track）</li>
+      </ol>
+    </div>
+  </body>
+</html>

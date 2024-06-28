@@ -1,0 +1,562 @@
+@charset 'utf-8';
+
+/*Fonts
+font-family: 'Cookie', cursive;
+font-family: 'Hina Mincho', serif;
+font-family: 'Kaisei HarunoUmi', serif;
+font-family: 'Kaisei Opti', serif;
+font-family: 'Klee One', cursive;
+font-family: 'Nothing You Could Do', cursive;
+*/
+
+/* Color Pallet
+#EAFDFC  アイスブルー
+#BFEAF5　淡い水色
+#91D8E4　水色
+#82AAE3 　青
+#63898D 深い青
+*/
+
+/* 全体 */
+main {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+    70deg,
+    rgba(30, 103, 205, 0.678) 0%,
+    rgba(234, 253, 252, 0.822) 100%
+  );
+}
+
+.ajisai {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  background-image: url(../img/bg2.png);
+  background-size: cover;
+  background-blend-mode: lighten;
+  z-index: 2;
+}
+
+/* 左側 */
+.lSec {
+  width: 25%;
+}
+
+.ArtistTitle {
+  font-family: "Kaisei HarunoUmi", serif;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  margin-left: 40px;
+}
+
+h1 {
+  margin: 20px 0 30px 50px;
+  font-size: 60px;
+  font-stretch: ultra-condensed;
+}
+
+.vertical1 {
+  color: #eafdfc;
+  text-shadow: rgb(109, 109, 107) 1px 0 10px;
+}
+
+.vertical2 {
+  color: #63898d;
+  text-shadow: rgb(222, 222, 220) 1px 0 10px;
+}
+
+h2 {
+  font-size: 30px;
+  padding-top: 250px;
+}
+
+.lSecLower {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+/* 真ん中 */
+.mSec {
+  width: 50%;
+  padding-left: 5%;
+}
+
+.mSec-upper {
+  position: relative;
+  margin: 0 auto;
+  height: 80%;
+  /* top: 5%; */
+  /* width: 30%; */
+  /* transform: translate(-40%, -40%); */
+}
+
+/* 円形 */
+.sec-wrapper {
+  position: absolute;
+  top: 5%;
+  margin-top: 0%;
+  width: 540px;
+  height: 540px;
+  border-radius: 50%;
+  /* background-color: #82aae3b2; */
+  margin-left: 65px;
+  padding: 70px;
+  opacity: 0.85;
+  background: rgba(130, 170, 227, 0.43);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.4px);
+  -webkit-backdrop-filter: blur(8.4px);
+  border: 1px solid rgba(130, 170, 227, 0.27);
+}
+
+/* Biography本文*/
+.sec-title1 {
+  font-family: "Kaisei HarunoUmi", serif;
+  color: #fff;
+  margin: 60px 50px 0 0px;
+  text-align: right;
+  font-size: 60px;
+}
+
+.sec-title2 {
+  font-family: "Kaisei HarunoUmi", serif;
+  color: #fff;
+  margin: 60px 0 0 50px;
+  text-align: left;
+  font-size: 60px;
+}
+
+.sec-position1 {
+  font-family: "Kaisei HarunoUmi", serif;
+  color: #fff;
+  margin-right: 20px;
+  text-align: right;
+  font-size: 35px;
+}
+
+.sec-position2 {
+  font-family: "Kaisei HarunoUmi", serif;
+  color: #fff;
+  margin-left: 20px;
+  text-align: left;
+  font-size: 35px;
+}
+
+.bio-birth1 {
+  font-family: "Hina Mincho", serif;
+  color: #fff;
+  margin: 10px 0 40px 20px;
+  text-align: right;
+  font-size: 22px;
+}
+
+.bio-birth2 {
+  font-family: "Hina Mincho", serif;
+  color: #fff;
+  margin: 10px 0 40px 0;
+  text-align: left;
+  font-size: 22px;
+}
+
+.bio-text {
+  margin: 0 20px 10px 20px;
+  font-family: "Hina Mincho", serif;
+  color: #334c71;
+  font-size: 20px;
+  line-height: 180%;
+  text-align: justify;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+/* アーティスト写真 */
+.drop1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 8;
+}
+
+.drop2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 8;
+}
+
+/* News本文 */
+
+.news-container {
+  margin: 50px 0 0 15px;
+  height: 420px;
+  width: 480px;
+  padding: 10px;
+  overflow: scroll;
+}
+
+.news-title {
+  font-family: "Kaisei HarunoUmi", serif;
+  color: #fff;
+  margin: 20px auto;
+  text-align: left;
+  font-size: 22px;
+}
+
+.news-text {
+  margin: 0 0 20px 0;
+  font-family: "Hina Mincho", serif;
+  color: #334c71;
+  font-size: 16px;
+  line-height: 180%;
+  text-align: justify;
+  font-weight: bold;
+}
+
+a#download {
+  color: #e050c1;
+  font-weight: bold;
+}
+
+/* Disc本文 */
+.album-count {
+  font-family: "Hina Mincho", serif;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  margin: 50px 0 0 20px;
+}
+
+.album-title {
+  font-family: "Kaisei HarunoUmi", serif;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  margin: 0 0 0 20px;
+}
+
+.album-container {
+  margin: 0 20px;
+  height: 525px;
+  width: 460px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* border: solid 3px lightseagreen; */
+}
+
+.album-photo {
+  width: 300px;
+  height: 300px;
+  margin: 40px 0 0 90px;
+  display: block;
+  align-self: center;
+  border-radius: 20px;
+}
+
+.album-text {
+  height: 200px;
+  overflow: scroll;
+  margin: 0 0 30px 80px;
+  font-family: "Hina Mincho", serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #334c71;
+  /* border: solid 3px tomato; */
+}
+
+ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+ol li {
+  counter-increment: my-awesome-counter;
+}
+ol li::before {
+  content: counter(my-awesome-counter) ". ";
+}
+
+/* Spcial本文 */
+.spc-titleContain {
+  margin: 20px 0;
+  height: 80px;
+  width: 520px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.spc-title1 {
+  width: 250px;
+  margin: 0 0 10px 0;
+  font-family: "Nothing You Could Do", cursive;
+  color: #fff;
+  text-align: right;
+  font-size: 28px;
+}
+
+.spc-title2 {
+  width: 250px;
+  margin: 10px auto;
+  font-family: "Kaisei HarunoUmi", serif;
+  color: #fff;
+  text-align: right;
+  font-size: 40px;
+}
+
+.shrink {
+  font-size: 24px;
+}
+
+.name {
+  color: #bfeaf5;
+}
+
+.spc-textCon {
+  height: 300px;
+  width: 480px;
+  align-self: center;
+  overflow: scroll;
+  margin-top: 40px;
+  padding: 0 30px 10px 30px;
+}
+
+.spc-text {
+  text-align: justify;
+  font-family: "Hina Mincho", serif;
+  color: #334c71;
+  font-size: 20px;
+  line-height: 180%;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+/* 下のリンク部分 */
+.mSec-lower {
+  position: absolute;
+  top: 70%;
+  left: 0%;
+  align-items: start;
+}
+
+.rSec {
+  width: 25%;
+  justify-content: end;
+}
+
+h3 {
+  font-family: "Nothing You Could Do", cursive;
+  font-size: 40px;
+  color: #63898d;
+}
+
+/* Discography */
+.plate1 {
+  width: 240px;
+  height: 240px;
+  /* background-color: #eafdfc; */
+  background: rgba(234, 253, 252, 0.36);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.8px);
+  -webkit-backdrop-filter: blur(7.8px);
+  border: 1px solid rgba(234, 253, 252, 0.1);
+  opacity: 0.9;
+  line-height: 240px;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 20px 30px 0;
+  animation: bounce 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-iteration-count: infinite;
+  animation-name: bounce;
+  animation-duration: 1.2s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-iteration-count: infinite;
+  /* box-shadow: 0 0 50px 10px hwb(69 80% 15% / 0.608); */
+}
+
+/* News */
+.plate2 {
+  position: absolute;
+  left: 30%;
+  width: 140px;
+  height: 140px;
+  line-height: 140px;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 0 10px 0;
+  /* background-color: #bfeaf5; */
+  background: rgba(160, 226, 243, 0.6);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.4px);
+  -webkit-backdrop-filter: blur(9.4px);
+  border: 1px solid rgba(160, 226, 243, 0.1);
+  opacity: 0.8;
+  animation-name: bounce;
+  animation-duration: 1.4s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-iteration-count: infinite;
+  /* box-shadow: 0 0 50px 10px hwb(75 85% 13% / 0.608); */
+}
+
+/* Top */
+.plate3 {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 0 30px 50px;
+  /* background-color: #bfeaf5; */
+  background: rgba(148, 228, 251, 0.61);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border: 1px solid rgba(148, 228, 251, 0.1);
+  opacity: 0.8;
+  /* animation-name: bounce;
+  animation-duration: 1.2s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-iteration-count: infinite; */
+  /* box-shadow: 0 0 50px 10px hwb(75 85% 13% / 0.608); */
+}
+
+/* Biography */
+.plate4 {
+  left: -10%;
+  width: 200px;
+  height: 200px;
+  /* background-color: #eafdfc; */
+  background: rgba(234, 253, 252, 0.63);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.9px);
+  -webkit-backdrop-filter: blur(4.9px);
+  border: 1px solid rgba(234, 253, 252, 0.15);
+  opacity: 0.8;
+  line-height: 200px;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 auto;
+  animation-name: bounce;
+  animation-duration: 1.5s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-iteration-count: infinite;
+  /* box-shadow: 0 0 50px 10px hwb(75 85% 13% / 0.608); */
+}
+
+/* Special */
+.plate5 {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  text-align: center;
+  border-radius: 50%;
+  margin: 200px 30px 0 0;
+  background: rgba(160, 226, 243, 0.6);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.4px);
+  -webkit-backdrop-filter: blur(9.4px);
+  border: 1px solid rgba(160, 226, 243, 0.1);
+  /* background-color: #bfeaf5; */
+  opacity: 0.9;
+  animation-name: bounce;
+  animation-duration: 0.9s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-iteration-count: infinite;
+  /* box-shadow: 0 0 50px 10px hwb(75 85% 13% / 0.608); */
+}
+
+h3#current {
+  /* background-color: #82aae3 !important; */
+  background: rgba(130, 170, 227, 0.63) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.9px);
+  -webkit-backdrop-filter: blur(4.9px);
+  border: 1px solid rgba(130, 170, 227, 0.15);
+  color: #fff;
+  animation: none;
+  opacity: 0.8;
+}
+
+/* 飛ぶ設定 */
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 200px, 0);
+  }
+}
+/* Prefix Support */
+
+@-webkit-keyframes bounce {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 200px, 0);
+    transform: translate3d(0, 200px, 0);
+  }
+}
+
+.rSecUpper {
+  height: 50%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 30px 0 0;
+}
+
+.rSecLower {
+  align-self: end;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 0 20px 0 0;
+}
+
+/* youtube設定 */
+.player-wrapper {
+  position: relative;
+  top: 5%;
+  left: 15%;
+  border-radius: 50%;
+  width: 700px;
+  height: 700px;
+  overflow: hidden;
+  margin-left: -50px;
+  z-index: 10;
+}
+
+.player-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: -270px;
+  border: 0;
+}
+
+.player-wrapper img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border: 0;
+}
+
+/* リンク関連 */
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}

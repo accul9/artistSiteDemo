@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ロクセンチ Official Website</title>
+    <link rel="stylesheet" href="CSS/reset-min.css" />
+    <link rel="stylesheet" href="CSS/style3.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&family=Hina+Mincho&family=Kaisei+HarunoUmi&family=Kaisei+Opti:wght@500&family=Klee+One&family=Nothing+You+Could+Do&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.css">
+  </head>
+  <body>
+    <main>
+      <div id="fullpage">
+        <div class="ajisai">
+          <div class="lSec">
+          <div class="ArtistTitle">
+            <h2>
+              <span class="vertical1">Rock</span>
+              <span class="vertical2">Senti</span>
+            </h2>
+            <h1>
+              <span class="vertical1">ロ</span>
+              <span class="vertical1">ク</span>
+              <span class="vertical2">セ</span>
+              <span class="vertical2">ン</span>
+              <span class="vertical1">チ</span>
+            </h1>
+          </div>
+          <div class="lSecLower">
+            <h3 class="plate1"><a href="disc.html">Discography</a></h3>
+          </div>
+          </div>
+          <div class="mSec">
+            <div class="section">
+              <div class="mSec-upper">
+                <div class="slide slide01">
+                  <div class="sec-wrapper">
+                    <h4 class="sec-title1">中原明彦</h4>
+                    <h5 class="sec-position1">Vocal & A. Guitar</h5>
+                    <img src="img/nakahara.png" alt="" class="drop1">
+                    <p class="bio-birth1">7月22日生まれ　出身地：東京都　A型</p>
+                    <p class="bio-text">
+                      大学卒業後、音楽活動をスタート。ユニット、ソロ活動を経て 2004年にロクセンチを始動させる。 圧倒的な歌唱力と豊かな表現力を持つボーカリスト。作詞・作曲を担当し、その楽曲は日常のストーリーを独自の視点でドラマティック描く作品群は常に高く評価され、 他アーティストへの詞曲提供も多数。
+                    </p>
+                  </div>
+                </div>
+                <div class="slide slide02">
+                  <div class="sec-wrapper">
+                  <h4 class="sec-title2">山田貴子</h4>
+                  <h5 class="sec-position2">Vocal & A. Guitar</h5>
+                  <img src="img/yamada.png" alt="" class="drop2">
+                  <p class="bio-birth2">10月1日生まれ　出身地：北海道　A型</p>
+                  <p class="bio-text">
+                    音大ピアノ科卒。力強さと繊細さを兼ね備えた本格派のプレイは クラシックはもちろん、ジャズ、ブルース、ロックとジャンルを問わない。作曲やマニピュレートでも才能を発揮し、ロクセンチ以外にも他アーティストの編曲やレコーディング、ライブサポートプレイヤーなど幅広い分野で高い評価を得ている。
+                  </p>
+                  </div>
+                </div>
+              </div>
+              <div class="mSec-lower">
+                <h3 class="plate2"><a href="news.html">News</a></h3>
+              </div>
+            </div>
+          </div>
+          <div class="rSec">
+          <div class="rSecUpper">
+            <h3 class="plate3"><a href="index2.html">Top<a ></h3>
+          </div>
+          <div class="rSecLower">
+            <h3 class="plate4" id="current"><a href="bio.html">Biography<a ></h3>
+            <h3 class="plate5"><a href="special.html">Special<a ></h3>
+          </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Javascript -->
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-latest.min.js"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js"></script>
+    <script>
+      jQuery(function () {
+          jQuery('#fullpage').fullpage({
+              scrollOverflow:true,
+          });
+      });
+    </script>
+    <script>new fullpage('#fullpage', {
+      // Options here
+      autoScrolling: true,
+      navigation: true,
+      slidesNavigation: true,
+      loopHorizontal: true,
+    });
+    </script>
+  </body>
+</html>

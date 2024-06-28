@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rainy Days</title>
+    <link rel="stylesheet" href="CSS/reset-min.css" />
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <style>
+      @charset 'utf-8';
+
+      .bg {
+        background-image: url(./img/album3-opa.png);
+        background-repeat: no-repeat;
+        background-size: 500px 500px;
+      }
+      .album-text {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        align-self: flex-start;
+        overflow: none;
+        font-family: "Hina Mincho", serif;
+        font-size: 20px;
+        font-weight: bold;
+        color: #334c71;
+        width: 500px;
+        height: 500px;
+        margin: 0;
+      }
+
+      ol {
+        list-style: none;
+        counter-reset: my-awesome-counter;
+        padding: 0;
+      }
+
+      ol li {
+        counter-increment: my-awesome-counter;
+      }
+
+      ol li::before {
+        content: counter(my-awesome-counter) ". ";
+      }
+    </style>
+  </head>
+  <body class="bg">
+    <div class="album-text">
+      <ol>
+        <li>ドンウォーリー！</li>
+        <li>Rainy Girl</li>
+        <li>つぼみ</li>
+        <li>ずるホリデー</li>
+        <li>きみの声がききたい</li>
+        <li>いつの間にこんな好きになっていたんだろう</li>
+        <li>はやくかえろう</li>
+        <li>You don’t have to be Perfect</li>
+        <li>リンカーンかワシントン</li>
+        <li>今を旅する者たちへ</li>
+      </ol>
+    </div>
+  </body>
+</html>
